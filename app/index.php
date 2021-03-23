@@ -9,9 +9,19 @@ require_once '../vendor/autoload.php';
 $app = new \Slim\App([]);
 
 
+function invetirPalabra($palabra = "HOLA"){
+    $cantidad = count($palabra);
+    $palabraInvertida = null;
+
+    for($i=$cantidad;$i>$cantidad;$i--){
+        $palabraInvertida += $palabra[$i];
+
+    }
+    return $palabraInvertida;
+}
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("GET => Bienvenido!!! ,a SlimFramework  a");
+    $response->getBody()->write(invetirPalabra());
     return $response;
 
 });
