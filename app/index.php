@@ -17,7 +17,7 @@ function invetirPalabra($palabra = "HOLA"){
         $palabraInvertida += $palabra[$i];
 
     }
-    return $palabraInvertida;
+    return $palabra;
 }
 
 $app->get('[/]', function (Request $request, Response $response) {    
