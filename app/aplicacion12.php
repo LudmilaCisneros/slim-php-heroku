@@ -1,5 +1,16 @@
 <?php
+use \Psr\Http\Message\ServerRequestInterface as Request;
+use \Psr\Http\Message\ResponseInterface as Response;
 
+require_once '../vendor/autoload.php';
+
+$app->get('[/]', function (Request $request, Response $response) {    
+    $response->getBody()->write(invetirPalabra());
+    return $response;
+
+});
+
+$app = new \Slim\App\([]);
 function invetirPalabra($palabra = "HOLA"){
     $cantidad = count($palabra);
     $palabraInvertida;
@@ -8,10 +19,9 @@ function invetirPalabra($palabra = "HOLA"){
         $palabraInvertida += $palabra[$i];
 
     }
-    echo $palabraInvertida;
-
+    return $palabraInvertida;
 }
-
+$app->run();
 
 
 ?>
