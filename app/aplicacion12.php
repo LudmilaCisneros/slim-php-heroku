@@ -21,7 +21,7 @@ function InvetirPalabra($palabra = "HOLA"){
         $palabraInvertida += $palabra[$i];
 
     }
-    return $palabraInvertida;
+    return $palabra;
 }
 $app->run();
 
