@@ -9,7 +9,7 @@ require_once '../vendor/autoload.php';
 $app = new \Slim\App([]);
 
 
-function InvetirPalabra($palabra = "HOLA"){
+function InvetirPalabra($palabra){
     $cantidad = count($palabra);
     $palabraInvertida = null;
 
@@ -21,7 +21,7 @@ function InvetirPalabra($palabra = "HOLA"){
 }
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write("HOLA");
+    $response->getBody()->write(InvetirPalabra($palabra = "HOLA"));
     return $response;
 
 });
