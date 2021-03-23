@@ -21,7 +21,7 @@ function InvetirPalabra($palabra){
 }
 
 $app->get('[/]', function (Request $request, Response $response) {    
-    $response->getBody()->write(InvetirPalabra($palabra = "HOLA"));
+    $response->getBody()->write(InvetirPalabra("HOLA"));
     return $response;
 
 });
