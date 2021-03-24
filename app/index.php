@@ -1,4 +1,18 @@
 <?php
+
+function InvetirPalabra($palabra = "HOLA"){
+    $cantidad = count($palabra);
+    $palabraInvertida = null;
+/*
+    for($i=$cantidad;$i>$cantidad;$i--){
+        $palabraInvertida += $palabra[$i];
+
+    }*/
+    return $palabra;
+}
+echo InvetirPalabra();
+
+/*
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
 
@@ -12,11 +26,11 @@ $app = new \Slim\App([]);
 function InvetirPalabra($palabra = "HOLA"){
     $cantidad = count($palabra);
     $palabraInvertida = null;
-/*
+
     for($i=$cantidad;$i>$cantidad;$i--){
         $palabraInvertida += $palabra[$i];
 
-    }*/
+    }
     return $palabra;
 }
 
@@ -27,4 +41,5 @@ $app->get('[/]', function (Request $request, Response $response) {
 });
 
 
-$app->run();
+$app->run();*/
+?>
