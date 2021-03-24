@@ -12,11 +12,11 @@ $app = new \Slim\App([]);
 function InvetirPalabra($palabra = "HOLA"){
     $cantidad = count($palabra);
     $palabraInvertida = null;
-
+/*
     for($i=$cantidad;$i>$cantidad;$i--){
         $palabraInvertida += $palabra[$i];
 
-    }
+    }*/
     return $palabra;
 }
 
