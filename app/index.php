@@ -1,7 +1,7 @@
 <?php
 
 function InvetirPalabra($palabra = "HOLA"){
-    $cantidad = count($palabra);
+    #$cantidad = count($palabra);
     $palabraInvertida = null;
 /*
     for($i=$cantidad;$i>$cantidad;$i--){
@@ -10,7 +10,10 @@ function InvetirPalabra($palabra = "HOLA"){
     }*/
     return $palabra;
 }
-echo "hola";
+function test($palabra = 'test'){
+    return $palabra;
+}
+echo InvetirPalabra();
 
 /*
 use \Psr\Http\Message\ServerRequestInterface as Request;
