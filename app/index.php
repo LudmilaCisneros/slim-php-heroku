@@ -10,7 +10,7 @@ function InvetirPalabra($palabra = "HOLA"){
     }*/
     return $palabra;
 }
-echo InvetirPalabra();
+echo "hola";
 
 /*
 use \Psr\Http\Message\ServerRequestInterface as Request;
